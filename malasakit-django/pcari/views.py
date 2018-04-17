@@ -477,14 +477,10 @@ def make_comment_ratings(respondent, response):
 def make_respondent_data(respondent, response):
     """ Save respondent data from a given response object. """
     respondent_data = response.get('respondent-data', {})
-    attributes = [
-        'age',
-        'gender',
-        'language',
-        'submitted_personal_data',
-        'completed_survey',
-        'sector',
-    ]
+    #attributes = ['age','gender','name','language','submitted_personal_data','completed_survey','sector',]
+    attributes = ['name','address','contact','group','PS','interviewer','organization',
+		  'PPiI','PPiII','PPiIII','PPiIV','PPiV','PPiVI','PPiVII','PPiVIII','PPiIX','PPiX',
+                   'submitted_personal_data','completed_survey',]
     for attribute in attributes:
         serialized_name = attribute.replace('_', '-')
         if serialized_name in respondent_data:

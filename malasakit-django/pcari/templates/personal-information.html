@@ -25,16 +25,42 @@
         }
       }
 
-      var clipAge = makeClipped(1, 120);
+    /*  var clipAge = makeClipped(1, 120);
       initializeField($('#age'), ['respondent-data', 'age'], function(rawValue) {
         var age = parseInt(rawValue);
         return isNaN(age) ? null : clipAge(age);
       });
-      initializeField($('#gender'), ['respondent-data', 'gender']);
+      initializeField($('#gender'), ['respondent-data', 'gender']); */
+
+// ----------------------
+// ---------- Starts here
+// ----------------------
+	initializeField($('#name'), ['respondent-data', 'name']);
+	initializeField($('#address'), ['respondent-data', 'address']);
+	initializeField($('#contact'), ['respondent-data', 'contact']);
+	initializeField($('#group'), ['respondent-data', 'group']);
+	initializeField($('#PS'), ['respondent-data', 'PS']);
+	initializeField($('#interviewer'), ['respondent-data', 'interviewer']);
+	initializeField($('#organization'), ['respondent-data', 'organization']);
+	
+	initializeField($('#PPiI'), ['respondent-data', 'PPiI']);
+	initializeField($('#PPiII'), ['respondent-data', 'PPiII']);
+	initializeField($('#PPiIII'), ['respondent-data', 'PPiIII']);
+	initializeField($('#PPiIV'), ['respondent-data', 'PPiIV']);
+	initializeField($('#PPiV'), ['respondent-data', 'PPiV']);
+	initializeField($('#PPiVI'), ['respondent-data', 'PPiVI']);
+	initializeField($('#PPiVII'), ['respondent-data', 'PPiVII']);
+	initializeField($('#PPiVIII'), ['respondent-data', 'PPiVIII']);
+	initializeField($('#PPiIX'), ['respondent-data', 'PPiIX']);
+	initializeField($('#PPiX'), ['respondent-data', 'PPiX']);
+
+// ----------------------
+// ---------- Ends here
+// ----------------------
 
       setResponseValue(['respondent-data', 'submitted-personal-data'], true);
 
-      var locations = Resource.load('locations').data;
+   /*   var locations = Resource.load('locations').data;
       for (var id in locations) {
         var location = locations[id];
         $('#barangay').append($('<option value="' + id + '">' + location.division + '</option>'));
@@ -56,6 +82,7 @@
       barangayExpand();
 
       initializeField($('#sector'), ['respondent-data', 'sector']);
+*/
 
       $('#next > a').on('click', function(event) {
         setResponseValue(['respondent-data', 'completed-survey'], true);
@@ -64,8 +91,8 @@
   </script>
 {% endblock %}
 
-{% block title %}{% trans 'Personal Information' %}{% endblock %}
-{% block main-heading %}{% trans 'Personal Information' %}{% endblock %}
+{% block title %}{% trans 'Personal a mga atoran' %}{% endblock %}
+{% block main-heading %}{% trans 'Personal a mga atoran' %}{% endblock %}
 
 {% block content %}
   <div class="container">
@@ -77,10 +104,91 @@
     </p>
   <table style="margin: 0 auto;">
     <tbody id="questions">
-      <tr>
+
+	<tr>
+		<td>Ngaran</td>
+        	<td><input type="text" id="name"></td>
+      	</tr>
+	<tr>
+		<td>Babalingan</td>
+        	<td><input type="text" id="address"></td>
+      	</tr>
+	<tr>
+		<td>Contact Number</td>
+        	<td><input type="text" id="contact"></td>
+      	</tr>
+	<tr>
+		<td>Pangkatan ko mga IP</td>
+        	<td><input type="text" id="group"></td>
+      	</tr>
+	<tr>
+		<td>4Ps/MCCT/GIDA</td>
+		<td>
+			<select id="PS">
+	            		<option value="" selected>Piliin</option>
+	            		<option value="4Ps">4Ps</option>
+	           		<option value="MCCT">MCCT</option>
+				<option value="GIDA">GIDA</option>
+	          	</select>
+		</td>
+      	</tr>
+	<tr>
+		<td>Dimamakaisa</td>
+        	<td><input type="text" id="interviewer"></td>
+      	</tr>
+	<tr>
+		<td>Ompungan</td>
+        	<td><input type="text" id="organization"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#1</td>
+        	<td><input type="text" id="PPiI"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#2</td>
+        	<td><input type="text" id="PPiII"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#3</td>
+        	<td><input type="text" id="PPiIII"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#4</td>
+        	<td><input type="text" id="PPiIV"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#5</td>
+        	<td><input type="text" id="PPiV"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#6</td>
+        	<td><input type="text" id="PPiVI"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#7</td>
+        	<td><input type="text" id="PPiVII"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#8</td>
+        	<td><input type="text" id="PPiVIII"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#9</td>
+        	<td><input type="text" id="PPiIX"></td>
+      	</tr>
+	<tr>
+		<td>PPI Scorecard for Person#10</td>
+        	<td><input type="text" id="PPiX"></td>
+      	</tr>
+
+	<! -- End here -->
+      <!--<tr>
         <td>{% trans 'Age' %}</td>
         <td><input id="age" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
-      </tr>
+      </tr> 
+      
+	
+
       <tr>
         <td>{% trans 'Gender' %}</td>
         <td>
@@ -112,9 +220,9 @@
             <option value="Religious Organization">{% trans 'Religious Organization' %}</option>
           </select>
         </td>
-      </tr>
+      </tr>-->
     </tbody>
   </table>
-  {% url 'pcari:quantitative-questions' as next_link %}
+  {% url 'pcari:end' as next_link %}
   {% include 'nav-buttons.html' %}
 {% endblock %}

@@ -81,6 +81,6 @@
   {% else %}
     <p class="error banner">{% trans 'There are not enough data to show how your responses compare to those of others.' %}</p>
   {% endif %}
-  {% url 'pcari:end' as next_link %}
+  {% url 'pcari:personal-information' as next_link %}
   {% include 'nav-buttons.html' %}
 {% endblock %}

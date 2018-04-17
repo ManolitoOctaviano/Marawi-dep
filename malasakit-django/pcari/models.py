@@ -499,6 +499,34 @@ class Respondent(models.Model):
         ('F', _('Female')),
     )
 
+    PS = (
+	('', _('(Empty)')),
+	('4PS', _('4PS')),
+	('MCCT', _('MCCT')),
+	('GIDA', _('GIDA')),
+    )
+
+### Starts here 
+    name = models.CharField(max_length=64,blank=True,default='')
+    address = models.CharField(max_length=64,blank=True,default='')
+    contact = models.CharField(max_length=64,blank=True,default='')
+    group = models.CharField(max_length=64,blank=True,default='')
+    PS = models.CharField(max_length=64, choices=PS, blank=True,default='')
+    interviewer = models.CharField(max_length=64,blank=True,default='')
+    organization = models.CharField(max_length=64,blank=True,default='')
+    
+    PPiI = models.CharField(max_length=64,blank=True,default='')
+    PPiII = models.CharField(max_length=64,blank=True,default='')
+    PPiIII = models.CharField(max_length=64,blank=True,default='')
+    PPiIV = models.CharField(max_length=64,blank=True,default='')
+    PPiV = models.CharField(max_length=64,blank=True,default='')
+    PPiVI = models.CharField(max_length=64,blank=True,default='')
+    PPiVII = models.CharField(max_length=64,blank=True,default='')
+    PPiVIII = models.CharField(max_length=64,blank=True,default='')
+    PPiIX = models.CharField(max_length=64,blank=True,default='')
+    PPiX = models.CharField(max_length=64,blank=True,default='')
+    
+    organization = models.CharField(max_length=64,blank=True,default='')	
     age = models.PositiveSmallIntegerField(default=None, null=True, blank=True,
         validators=[MinValueValidator(0), MaxValueValidator(120)])
     gender = models.CharField(max_length=1, choices=GENDERS, blank=True,

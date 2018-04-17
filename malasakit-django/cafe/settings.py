@@ -158,7 +158,6 @@ HTML_MINIFY = not DEBUG
 
 LANGUAGES = (
     ('en', _('English')),
-    ('tl', _('Filipino')),
 )
 
 LOCALE_PATHS = (
