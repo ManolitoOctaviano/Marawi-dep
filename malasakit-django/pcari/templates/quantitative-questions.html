@@ -103,9 +103,9 @@
 
         buttonContainer.append(buttonGroup);
         buttonContainer.append($('<span>').addClass('left-anchor').append($('<img>')
-          .attr('src', STATIC_URL_ROOT + '/img/red-emoticon.png')));
+          .attr('src', STATIC_URL_ROOT + '/img/plain.png')));
         buttonContainer.append($('<span>').addClass('right-anchor').append($('<img>')
-          .attr('src', STATIC_URL_ROOT + '/img/green-emoticon.png')));
+          .attr('src', STATIC_URL_ROOT + '/img/plain.png')));
         $('#answer').append(buttonContainer);
         $('#submit').hide();
       }
@@ -205,8 +205,7 @@
   <p class="instructions">
     <strong>
       {% blocktrans trimmed %}
-        Rate the statement below from one to six, where one represents totally
-        disagree and the six represents totally agreeable.
+        Mga Pakaisa adun a bilangan nyan: Sumbag anka uman e paka-ehsa na pili ka ko pinkamasagogod a sumbag a katulad eyan so masusuwa imanto (so masa imanto odi na behtad).
       {% endblocktrans %}
     </strong>
   </p>
@@ -220,13 +219,13 @@
   <div id="notice" class="center"></div>
   <ul class="button-group">
     <li>
-      <button id="previous" class="blue">{% trans 'Previous' %}</button>
+      <button id="previous" class="blue">{% trans 'So miyawna/miyaEpos' %}</button>
     </li>
     <li>
-      <button id="skip" class="red">{% trans 'Skip' %}</button>
+      <button id="skip" class="red">{% trans 'di nga sumbaga/pak-lehpasun' %}</button>
     </li>
     <li>
-      <button id="submit" class="blue">{% trans 'Submit' %}</button>
+      <button id="submit" class="blue">{% trans 'Sunod/pakasunod' %}</button>
     </li>
   </ul>
 {% endblock %}

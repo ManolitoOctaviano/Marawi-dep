@@ -479,7 +479,16 @@ def make_respondent_data(respondent, response):
     respondent_data = response.get('respondent-data', {})
     #attributes = ['age','gender','name','language','submitted_personal_data','completed_survey','sector',]
     attributes = ['name','address','contact','group','PS','interviewer','organization',
-		  'PPiI','PPiII','PPiIII','PPiIV','PPiV','PPiVI','PPiVII','PPiVIII','PPiIX','PPiX',
+		  'PPiIName', 'PPiIAge','PPiIGender','PPiIQI','PPiIQII','PPiIQIII','PPiIQIV',
+		  'PPiIIName', 'PPiIIAge','PPiIIGender','PPiIIQI','PPiIIQII','PPiIIQIII','PPiIIQIV',
+		  'PPiIIIName', 'PPiIIIAge','PPiIIIGender','PPiIIIQI','PPiIIIQII','PPiIIIQIII','PPiIIIQIV',
+ 		  'PPiIVName', 'PPiIVAge','PPiIVGender','PPiIVQI','PPiIVQII','PPiIVQIII','PPiIVQIV',
+		  'PPiVName', 'PPiVAge','PPiVGender','PPiVQI','PPiVQII','PPiVQIII','PPiVQIV',
+		  'PPiVIName', 'PPiVIAge','PPiVIGender','PPiVIQI','PPiVIQII','PPiVIQIII','PPiVIQIV',
+		  'PPiVIIName', 'PPiVIIAge','PPiVIIGender','PPiVIIQI','PPiVIIQII','PPiVIIQIII','PPiVIIQIV',
+		  'PPiVIIIName', 'PPiVIIIAge','PPiVIIIGender','PPiVIIIQI','PPiVIIIQII','PPiVIIIQIII','PPiVIIIQIV',
+		  'PPiIXName', 'PPiIXAge','PPiIXGender','PPiIXQI','PPiIXQII','PPiIXQIII','PPiIXQIV',
+		  'PPiXName', 'PPiXAge','PPiXGender','PPiXQI','PPiXQII','PPiXQIII','PPiXQIV',
                    'submitted_personal_data','completed_survey',]
     for attribute in attributes:
         serialized_name = attribute.replace('_', '-')

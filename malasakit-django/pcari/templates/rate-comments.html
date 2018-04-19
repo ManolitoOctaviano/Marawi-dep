@@ -3,8 +3,8 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}{% trans 'Rate Comments by Other Users' %}{% endblock %}
-{% block main-heading %}{% trans 'Rate Comments by Other Users' %}{% endblock %}
+{% block title %}{% trans 'Behgi ka sa comment/usayan so pud a pehgamit' %}{% endblock %}
+{% block main-heading %}{% trans 'Behgi ka sa comment/usayan so pud a pehgamit' %}{% endblock %}
 
 {% block static-assets %}
   {{ block.super }}
@@ -15,13 +15,11 @@
 {% block content %}
   <p>
     {% blocktrans trimmed %}
-      Each icon below is a comment made by another participant.
-      Comments that are closer together were authored by participants who answered the previous questions similarly.
+      Uman isa icon na usayan/comment a minibgay o pud a participant/tao. Comment/usay a marani ko oman isa na guyoto so mga pinibgay a sumbag o mga pud ko mga miya-una a mga mehlaged a paka-ehsa.
     {% endblocktrans %}
   <p>
     {% blocktrans trimmed %}
-      Click on an icon to rate a comment on its helpfulness.
-      <strong>You must rate at least two comments to proceed by clicking "Next" below.</strong>
+Click angka so icon para mabgay ka so usayan o kapiya nyan. Dapat na kabgan ka sa bapiya bo duwa a comments/usayan para ka mka-ehseg na click anka so "Sunod/pakasunod" sa baba.
     {% endblocktrans %}
   </p>
   <div id="notice"></div>

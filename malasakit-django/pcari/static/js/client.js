@@ -10,23 +10,23 @@ const API_URL_ROOT = APP_URL_ROOT + '/api';
 const STATIC_URL_ROOT = APP_URL_ROOT + '/static';
 const RESPONSE_SAVE_ENDPOINT = API_URL_ROOT + '/save-response/';
 
-const RESPONSE_LIFETIME = 60*1000;
+const RESPONSE_LIFETIME = 60*1000*24*24;
 const DEFAULT_COMMENT_SAMPLE_SIZE = 8;
 const STATIC_RESOURCES = [
     {
         name: 'quantitative-questions',
         endpoint: API_URL_ROOT + '/fetch/quantitative-questions/',
-        lifetime: 0
+        lifetime: 60*1000*24*24
     },
     {
         name: 'option-questions',
         endpoint: API_URL_ROOT + '/fetch/option-questions/',
-        lifetime: 0
+        lifetime: 60*1000*24*24
     },
     {
         name: 'qualitative-questions',
         endpoint: API_URL_ROOT + '/fetch/qualitative-questions/',
-        lifetime: 0
+        lifetime: 60*1000*24*24
     },
     {
         name: 'comments',
@@ -36,12 +36,12 @@ const STATIC_RESOURCES = [
     {
         name: 'locations',
         endpoint: API_URL_ROOT + '/fetch/locations/',
-        lifetime: 0
+        lifetime: 60*1000*24*24
     },
     {
         name: 'bloom-icon',
         endpoint: STATIC_URL_ROOT + '/data/bloom-icon.json',
-        lifetime: 0
+        lifetime: 60*1000*24*24
     }
 ];
 

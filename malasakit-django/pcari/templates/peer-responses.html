@@ -3,8 +3,8 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}{% trans 'Peer Responses' %}{% endblock %}
-{% block main-heading %}{% trans 'Peer Responses' %}{% endblock %}
+{% block title %}{% trans 'Sumbag o mga bolayoka/pagari' %}{% endblock %}
+{% block main-heading %}{% trans 'Sumbag o mga bolayoka/pagari' %}{% endblock %}
 
 {% block scripts %}
   <script>
@@ -40,7 +40,7 @@
   {% if questions %}
     <p>
       {% blocktrans trimmed %}
-        Below, you can see how the other respondents answered the survey questions.
+       Sa baba na ka-elay nga so sumbag o pud ko mga paka-ehsa (survey question)
       {% endblocktrans %}
     </p>
     <div id="peer-responses">
@@ -49,7 +49,7 @@
           <div class="boxed">
             <p>
               {% blocktrans trimmed %}
-                <strong>{{ num_ratings }}</strong> other people answered this question:
+                <strong>{{ num_ratings }}</strong> o pud a tao na so sumbag eyan ko mga paka-ehsa:
               {% endblocktrans %}
             </p>
             <blockquote>
@@ -65,13 +65,13 @@
                   <img src="{% static 'img/green-emoticon.png' %}">
                 {% endif %}
                 {% blocktrans trimmed %}
-                  Average answer: <strong>{{ mean }}</strong>
+                  Average answer/Sukudan a sumbag: <strong>{{ mean }}</strong>
                 {% endblocktrans %}
               </div>
             {% endif %}
             <div class="bubbled">
               {% with id=question.id %}
-                {% trans 'Your answer:'%} <strong id="answer-{{ id }}">{% trans 'Not rated' %}</strong>
+                {% trans 'So sumbag ka:'%} <strong id="answer-{{ id }}">{% trans 'Not rated' %}</strong>
               {% endwith %}
             </div>
           </div>

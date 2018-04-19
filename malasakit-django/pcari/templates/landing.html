@@ -19,19 +19,22 @@
 {% block content %}
   <div>
     <p class="center">
-      {% trans 'How prepared are you in times of disaster?' %}
+      
     </p>
     <p class="center">
       {% blocktrans trimmed %}
-        {{ num_responses }} barangay citizens have responded.
+        {{ num_responses }} so magEngud na sumimbag.
       {% endblocktrans %}
     </p>
     <p class="center">
-      {% trans 'Join them!' %}
+      {% trans 'Pamangped kanu!' %}
     </p>
     <img src="{% static 'img/landing' %}">
+<p align="justify">
+Sa gya kyasumbag akun, pagayun ako na kabaya ganawa akun a myapud akun sa gya "E-participation Project on Zero Extreme Poverty". Katawan akun na so lagun a matatago information ago sumbag a myatimo a mingulalan ko igagama/instrument na pagusarun para sa research purpose a National University Manila and De La Salle Philippines.
+</p>
   </div>
   {% url 'pcari:quantitative-questions' as next_link %}
-  {% trans 'Begin' as next_label %}
+  {% trans 'Puon/pagpuon' as next_label %}
   {% include 'nav-buttons.html' %}
 {% endblock %}

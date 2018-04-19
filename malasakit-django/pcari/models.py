@@ -506,6 +506,27 @@ class Respondent(models.Model):
 	('GIDA', _('GIDA')),
     )
 
+    QI = (
+	('', _('(Empty)')),
+	('Di 5-18', _('Di 5-18')),
+	('Kehnaba', _('Kehnaba')),
+	('Oway', _('Oway')),
+    )
+
+    QII = (
+	('', _('(Empty)')),
+	('Di 5 o subra', _('Di 5 o subra')),
+	('Di', _('Di')),
+	('Oway', _('Oway')),
+    )
+
+    QIII = (
+	('', _('(Empty)')),
+	('Da galbek', _('Da galbek')),
+	('Oway', _('Oway')),
+	('Di', _('Di')),
+    )
+
 ### Starts here 
     name = models.CharField(max_length=64,blank=True,default='')
     address = models.CharField(max_length=64,blank=True,default='')
@@ -515,16 +536,87 @@ class Respondent(models.Model):
     interviewer = models.CharField(max_length=64,blank=True,default='')
     organization = models.CharField(max_length=64,blank=True,default='')
     
-    PPiI = models.CharField(max_length=64,blank=True,default='')
-    PPiII = models.CharField(max_length=64,blank=True,default='')
-    PPiIII = models.CharField(max_length=64,blank=True,default='')
-    PPiIV = models.CharField(max_length=64,blank=True,default='')
-    PPiV = models.CharField(max_length=64,blank=True,default='')
-    PPiVI = models.CharField(max_length=64,blank=True,default='')
-    PPiVII = models.CharField(max_length=64,blank=True,default='')
-    PPiVIII = models.CharField(max_length=64,blank=True,default='')
-    PPiIX = models.CharField(max_length=64,blank=True,default='')
-    PPiX = models.CharField(max_length=64,blank=True,default='')
+### profilling
+    # 1
+    PPiIName = models.CharField(max_length=64,blank=True,default='')
+    PPiIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIQIV = models.CharField(max_length=64,blank=True,default='')
+ # 2
+    PPiIIName = models.CharField(max_length=64,blank=True,default='')
+    PPiIIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiIIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIQIV = models.CharField(max_length=64,blank=True,default='')
+ # 3
+    PPiIIIName = models.CharField(max_length=64,blank=True,default='')
+    PPiIIIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiIIIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIIIQIV = models.CharField(max_length=64,blank=True,default='')
+ # 4
+    PPiIVName = models.CharField(max_length=64,blank=True,default='')
+    PPiIVAge = models.CharField(max_length=64,blank=True,default='')
+    PPiIVGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIVQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIVQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIVQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIVQIV = models.CharField(max_length=64,blank=True,default='')
+# 5
+    PPiVName = models.CharField(max_length=64,blank=True,default='')
+    PPiVAge = models.CharField(max_length=64,blank=True,default='')
+    PPiVGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVQIV = models.CharField(max_length=64,blank=True,default='')
+# 6
+    PPiVIName = models.CharField(max_length=64,blank=True,default='')
+    PPiVIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiVIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIQIV = models.CharField(max_length=64,blank=True,default='')
+# 7
+    PPiVIIName = models.CharField(max_length=64,blank=True,default='')
+    PPiVIIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiVIIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIQIV = models.CharField(max_length=64,blank=True,default='')
+# 8
+    PPiVIIIName = models.CharField(max_length=64,blank=True,default='')
+    PPiVIIIAge = models.CharField(max_length=64,blank=True,default='')
+    PPiVIIIGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIIQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIIQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIIQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiVIIIQIV = models.CharField(max_length=64,blank=True,default='')
+# 9
+    PPiIXName = models.CharField(max_length=64,blank=True,default='')
+    PPiIXAge = models.CharField(max_length=64,blank=True,default='')
+    PPiIXGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIXQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIXQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIXQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiIXQIV = models.CharField(max_length=64,blank=True,default='')
+# 10
+    PPiXName = models.CharField(max_length=64,blank=True,default='')
+    PPiXAge = models.CharField(max_length=64,blank=True,default='')
+    PPiXGender = models.CharField(max_length=1, choices=GENDERS, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiXQI = models.CharField(max_length=64, choices=QI, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiXQII = models.CharField(max_length=64, choices=QII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiXQIII = models.CharField(max_length=64, choices=QIII, blank=True, default='', validators=[RegexValidator(r'^(|M|F)$')])
+    PPiXQIV = models.CharField(max_length=64,blank=True,default='')
     
     organization = models.CharField(max_length=64,blank=True,default='')	
     age = models.PositiveSmallIntegerField(default=None, null=True, blank=True,
