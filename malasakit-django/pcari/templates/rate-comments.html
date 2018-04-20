@@ -3,8 +3,8 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}{% trans 'Behgi ka sa comment/usayan so pud a pehgamit' %}{% endblock %}
-{% block main-heading %}{% trans 'Behgi ka sa comment/usayan so pud a pehgamit' %}{% endblock %}
+{% block title %}{% trans 'Taks angka so comments o pud a pagusar' %}{% endblock %}
+{% block main-heading %}{% trans 'Taks angka so comments o pud a pagusar' %}{% endblock %}
 
 {% block static-assets %}
   {{ block.super }}
@@ -15,7 +15,7 @@
 {% block content %}
   <p>
     {% blocktrans trimmed %}
-      Uman isa icon na usayan/comment a minibgay o pud a participant/tao. Comment/usay a marani ko oman isa na guyoto so mga pinibgay a sumbag o mga pud ko mga miya-una a mga mehlaged a paka-ehsa.
+      Uman isa ko icon na usayan/comment a minibgay o pud a participant/tao. Comment/usay a marani ko oman isa na guyoto so mga pinibgay a sumbag o mga pud ko mga miya-una a mga mehlaged a paka-ehsa.
     {% endblocktrans %}
   <p>
     {% blocktrans trimmed %}
@@ -26,27 +26,27 @@ Click angka so icon para mabgay ka so usayan o kapiya nyan. Dapat na kabgan ka s
   <svg id="bloom" width="100%"></svg>
   <div class="modal">
     <div class="modal-container">
-      <p>{% trans 'The question was:' %}</p>
+      <p>{% trans 'So paka-esa na:' %}</p>
       <blockquote id="question-prompt"></blockquote>
-      <p>{% trans 'The comment was:' %}</p>
+      <p>{% trans 'So pamikasan/comment na:' %}</p>
       <blockquote id="comment-message"></blockquote>
 
       <div class="range-container">
         <input id="quantitative-input" target-id="comment-rating" type="range"
                value="1" step="1" min="1" max="6">
-        <span class="left-anchor">{% trans 'Not helpful' %}</span>
-        <span class="right-anchor">{% trans 'Helpful' %}</span>
+        <span class="left-anchor">{% trans 'Tehto a di pagayon' %}</span>
+        <span class="right-anchor">{% trans 'Tehto a myakaayon' %}</span>
       </div>
       <p>
-        {% trans 'Your current answer is ' %} <output id="quantitative-output"></output>.
+        {% trans 'So kapapatagan a sumbag na' %} <output id="quantitative-output"></output>.
       </p>
 
       <ul class="button-group">
         <li>
-          <button id="skip" class="red">{% trans 'Skip' %}</button>
+          <button id="skip" class="red">{% trans 'Pehlepasun' %}</button>
         </li>
         <li>
-          <button id="submit" class="blue">{% trans 'Submit' %}</button>
+          <button id="submit" class="blue">{% trans 'Esumbot/Epass' %}</button>
         </li>
       </ul>
     </div>
