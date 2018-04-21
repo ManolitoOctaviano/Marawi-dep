@@ -19,7 +19,7 @@
     {% endblocktrans %}
   <p>
     {% blocktrans trimmed %}
-Mag-click ng isang icon upang mai-rate ang komento batay sa kapikanabangan nito. Kinakailangan mong mag-rate ng dalawang komento upang makapagpatuloy sa pamamagitan ng pag-click sa "Susunod" sa ibaba. 
+Mag-click ng isang icon upang mai-rate ang komento batay sa antas ng inyong pagsang-ayon dito. Kinakailangan mong mag-rate ng dalawang komento upang makapagpatuloy. Pagkatapos mag-rate, i-click ang "Susunod" sa ibaba. 
     {% endblocktrans %}
   </p>
   <div id="notice"></div>
@@ -28,17 +28,17 @@ Mag-click ng isang icon upang mai-rate ang komento batay sa kapikanabangan nito.
     <div class="modal-container">
       <p>{% trans 'Ang tanong ay:' %}</p>
       <blockquote id="question-prompt"></blockquote>
-      <p>{% trans 'Ang komento ay:' %}</p>
+      <p>{% trans 'Ang komento ng isang kalahok ay:' %}</p>
       <blockquote id="comment-message"></blockquote>
 
       <div class="range-container">
         <input id="quantitative-input" target-id="comment-rating" type="range"
                value="1" step="1" min="1" max="6">
-        <span class="left-anchor">{% trans 'Hindi nakatutulong' %}</span>
-        <span class="right-anchor">{% trans 'Nakatutulong' %}</span>
+        <span class="left-anchor">{% trans 'Di sumasang-ayon' %}</span>
+        <span class="right-anchor">{% trans 'Sumasang-ayon' %}</span>
       </div>
       <p>
-        {% trans 'Ang kasalukuyang sagot ay' %} <output id="quantitative-output"></output>.
+        {% trans 'Ang antas ng iyong pagsang-ayon ay:' %} <output id="quantitative-output"></output>.
       </p>
 
       <ul class="button-group">
