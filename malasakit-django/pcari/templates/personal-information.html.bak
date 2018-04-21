@@ -182,7 +182,7 @@
   <div class="container">
     <p class="center">
       {% blocktrans trimmed %}
-        Mangyaring sagutin ang hinihingi ng bawat item sa ibaba.
+        Sembag angka so mga item sa baba.
       {% endblocktrans %}
     </p>
   <table style="margin: 0 auto;">
@@ -310,11 +310,11 @@
         <td> # </td>
         <td> Pangalan </td>
         <td> Edad </td>
-        <td> Kasarian </td>
-        <td> Kung edad 5 hanggang 18, siya ba ay pumapasok sa paaralan?  </td>
-        <td> Kung edad 5 pataas, siya ba ay nagsuweldo sa pagtrabaho kada oras noong nakaraang linggo?  </td>
-        <td> Ang pangunahing trabaho ba noong nakaraang linggo ay bilang magsasaka, mangingisda, trabahador, o uring manggagawa?  </td>
-        <td> Magkano ang nakukuhang sahod? Ito ba ay arawan, lingguhan o buwanan? </td>
+        <td> Mama o babai </td>
+        <td> O edad eyan na 5 taman 18 di syaniyan di mgeskwela?  </td>
+        <td> O edad eyan na 5 o subra, ba ska nyan kyasukayan sa kagalbuk oman oras sa gya mya pito gawii?  </td>
+        <td> So okit o kawiwiyag a galbek sa gya miyakapito gawii na kambasok, kapangisda, salinggugupa o pud a galbek?  </td>
+        <td> Pira myakuwa a sukay? Oba uman salongan, uman pitogawii odi na uman saulan? </td>
     </thead>
     <tbody id="questions">
       <tr>
@@ -323,33 +323,33 @@
         <td><input id="PPiIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiIGender">
-            <option value="" selected>Kasarian</option>
-           <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+           <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
 	<td>
           <select id="PPiIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hind">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiIQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi natatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiIQIV" type="text"> </td>
@@ -360,33 +360,33 @@
         <td><input id="PPiIIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiIIGender">
-            <option value="" selected>Kasarian</option>
-           <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+           <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiIIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiIIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiIIQIII">
             <option value="" selected>Pamili</option>
-            <option value="Hindi natatrabaho">Hindi natatrabahok</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiIIQIV" type="text"> </td>
@@ -397,33 +397,33 @@
         <td><input id="PPiIIIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiIIIGender">
-            <option value="" selected>Kasarian</option>
-           <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+           <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
 	<td>
           <select id="PPiIIIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiIIIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 o subra">Di 5 o subra</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiIIIQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiIIIQIV" type="text"> </td>
@@ -434,33 +434,33 @@
         <td><input id="PPiIVAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiIVGender">
-            <option value="" selected>Kasarian</option>
-          <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+          <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiIVQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiIVQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiIVQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="M">Da galbek</option>
+            <option value="F">Oway</option>
+	    <option value="F">Di</option>
           </select>
 	</td>
         <td> <input id="PPiIVQIV" type="text"> </td>
@@ -471,33 +471,33 @@
         <td><input id="PPiVAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiVGender">
-            <option value="" selected>Kasarian</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiVQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiVQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiVQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">HIndi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiVQIV" type="text"> </td>
@@ -508,33 +508,33 @@
         <td><input id="PPiVIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiVIGender">
-            <option value="" selected>Kasarian</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
 	<td>
           <select id="PPiVIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiVIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiVIQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiVIQIV" type="text"> </td>
@@ -545,33 +545,33 @@
         <td><input id="PPiVIIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiVIIGender">
-            <option value="" selected>Kasarian</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiVIIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiVIIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataaas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiVIIQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">O</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiVIIQIV" type="text"> </td>
@@ -582,33 +582,33 @@
         <td><input id="PPiVIIIAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiVIIIGender">
-            <option value="" selected>Kasarian</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiVIIIQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiVIIIQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiVIIIQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiVIIIQIV" type="text"> </td>
@@ -620,32 +620,32 @@
         <td>
           <select id="PPiIXGender">
             <option value="" selected>Mama o babai</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
         <td>
           <select id="PPiIXQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiIXQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiIXQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi nagtatrabaho">Hindi nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiIXQIV" type="text"> </td>
@@ -656,33 +656,33 @@
         <td><input id="PPiXAge" type="number" min="1" max="120" onkeypress="validatePositiveInteger(event)"></td>
         <td>
           <select id="PPiXGender">
-            <option value="" selected>Kasarian</option>
-            <option value="M">Lalaki</option>
-            <option value="F">Babae</option>
+            <option value="" selected>Mama o babai</option>
+            <option value="M">Mama</option>
+            <option value="F">babai</option>
           </select>
         </td>
 	<td>
           <select id="PPiXQI">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5-18">Hindi 5-18 </option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5-18">Di 5-18 </option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
         </td>
         <td> 
 	  <select id="PPiXQII">
             <option value="" selected>Pumili</option>
-            <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hindi">Hindi</option>
-	    <option value="Oo">Oo</option>
+            <option value="Di 5 o subra">Di 5 o subra</option>
+            <option value="Di">Di</option>
+	    <option value="Oway">Oway</option>
           </select>
 	</td>
         <td> 
 	  <select id="PPiXQIII">
             <option value="" selected>Pumili</option>
-            <option value="Hind nagtatrabaho">Hind nagtatrabaho</option>
-            <option value="Oo">Oo</option>
-	    <option value="Hindi">Hindi</option>
+            <option value="Da galbek">Da galbek</option>
+            <option value="Oway">Oway</option>
+	    <option value="Di">Di</option>
           </select>
 	</td>
         <td> <input id="PPiXQIV" type="text"> </td>

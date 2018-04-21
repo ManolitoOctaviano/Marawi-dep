@@ -3,8 +3,8 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}{% trans 'Paka-esah a bilangan' %}{% endblock %}
-{% block main-heading %}{% trans 'Paka-esah a bilangan' %}{% endblock %}
+{% block title %}{% trans 'Mga Kuwantitatibong Tanong' %}{% endblock %}
+{% block main-heading %}{% trans 'Mga Kuwantitatibong Tanong' %}{% endblock %}
 
 {% block scripts %}
   <script>
@@ -111,7 +111,7 @@
       }
 
       if (value === SKIPPED) {
-        $('#notice').append($('<p>').text(gettext('You previously chose to skip this question.')));
+        $('#notice').append($('<p>').text(gettext('Dati mong linaktawan ang katanungang ito.')));
       }
     }
 
@@ -133,7 +133,7 @@
       }
 
       if (previousAnswer === null) {
-        $('#notice').append($('<p>').text(gettext('You previously chose to skip this question.')));
+        $('#notice').append($('<p>').text(gettext('Dati mong linaktawan ang katanungang ito.')));
       }
     }
 
@@ -205,13 +205,13 @@
   <p class="instructions">
     <strong>
       {% blocktrans trimmed %}
-        Mga Pakaisa adun a bilangan nyan: Sumbag anka uman e paka-ehsa na pili ka ko pinkamasagogod a sumbag a kehtulad eyan so masusuwa imanto (so masa imanto odi na behtad).
+        Sagutin ang bawat tanong sa pamamagitan ng pagpili ng pinakaangkop na sagot na naglalarawan sa iyong kasalukuyang sitwasyon.
       {% endblocktrans %}
     </strong>
   </p>
   <p id="progression">
     <strong>
-      {% trans 'Paka-ehsa ' %} <span id="progression-numerator"></span>/<span id="progression-denominator"></span>:
+      {% trans 'Tanong ' %} <span id="progression-numerator"></span>/<span id="progression-denominator"></span>:
     </strong>
   </p>
   <p id="prompt"></p>
@@ -219,13 +219,13 @@
   <div id="notice" class="center"></div>
   <ul class="button-group">
     <li>
-      <button id="previous" class="blue">{% trans 'So miyawna/miyaEpos' %}</button>
+      <button id="previous" class="blue">{% trans 'Bumalik' %}</button>
     </li>
     <li>
-      <button id="skip" class="red">{% trans 'di nga sumbaga/pak-lehpasun' %}</button>
+      <button id="skip" class="red">{% trans 'Lagpasan' %}</button>
     </li>
     <li>
-      <button id="submit" class="blue">{% trans 'Sunod/pakasunod' %}</button>
+      <button id="submit" class="blue">{% trans 'Susunod' %}</button>
     </li>
   </ul>
 {% endblock %}

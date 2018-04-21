@@ -2,8 +2,8 @@
 
 {% load i18n %}
 
-{% block title %}{% trans 'Salamat/Sukran' %}{% endblock %}
-{% block main-heading %}{% trans 'Salamat/Sukran' %}{% endblock %}
+{% block title %}{% trans 'Maraming Salamat' %}{% endblock %}
+{% block main-heading %}{% trans 'Maraming Salamat' %}{% endblock %}
 
 {% block scripts %}
   <script>
@@ -18,8 +18,8 @@
 
 {% block content %}
   <p class="center">
-    {% trans 'Panalamat kami sa kya pud ka sa gya Malasakit program' %}
+    {% trans 'Lubos naming pinahahalagahan ang inyong pakikilahok. ' %}
   </p>
   {% url 'pcari:landing' as next_link %}
-  {% include 'nav-buttons.html' with next_label=_('Kapusan') %}
+  {% include 'nav-buttons.html' with next_label=_('Tapusin') %}
 {% endblock %}
