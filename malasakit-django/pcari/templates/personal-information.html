@@ -36,7 +36,8 @@
 // ---------- Starts here
 // ----------------------
 	initializeField($('#name'), ['respondent-data', 'name']);
-	initializeField($('#address'), ['respondent-data', 'address']);
+	initializeField($('#curaddress'), ['respondent-data', 'curaddress']);
+	initializeField($('#peraddress'), ['respondent-data', 'peraddress']);
 	initializeField($('#contact'), ['respondent-data', 'contact']);
 	initializeField($('#group'), ['respondent-data', 'group']);
 	initializeField($('#PS'), ['respondent-data', 'PS']);
@@ -193,8 +194,12 @@
         	<td><input type="text" id="name"></td>
       	</tr>
 	<tr>
-		<td>Tirahan</td>
-        	<td><input type="text" id="address"></td>
+		<td>Saan kasalukuyang nakatira</td>
+        	<td><input type="text" id="curaddress"></td>
+      	</tr>
+	<tr>
+		<td>Saan ang tirahan</td>
+        	<td><input type="text" id="peraddress"></td>
       	</tr>
 	<tr>
 		<td>Contact Number</td>
@@ -340,7 +345,7 @@
 	  <select id="PPiIQII">
             <option value="" selected>	Pumili</option>
             <option value="Hindi 5 pataas">Hindi 5 pataas</option>
-            <option value="Hind">Hindi</option>
+            <option value="Hindi">Hindi</option>
 	    <option value="Oo">Oo</option>
           </select>
 	</td>

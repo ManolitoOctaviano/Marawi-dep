@@ -508,33 +508,28 @@ class Respondent(models.Model):
 
     QI = (
 	('', _('(Empty)')),
-	('Hindi 5-18', _('Hindi 5-18')),	
-	('Hindi', _('Hindi')),
-	('Oo', _('Oo')),
+	('Di 5-18', _('Di 5-18')),
+	('Kehnaba', _('Kehnaba')),
+	('Oway', _('Oway')),
     )
 
     QII = (
 	('', _('(Empty)')),
-	('Hindi 5 pataas', _('Hindi 5 pataas')),
-	('Hindi', _('Hindi')),
-	('Oo', _('Oo')),
+	('Di 5 o subra', _('Di 5 o subra')),
+	('Di', _('Di')),
+	('Oway', _('Oway')),
     )
 
     QIII = (
 	('', _('(Empty)')),
-	('Hindi nagtatrabaho', _('Hindi nagtatrabaho')),
-	('Magsasaka', _('Magsasaka')),
-	('Mangingisda', _('Mangingisda')),
-	('Magsasaka', _('Magsasaka')),
-	('Trabahador', _('Trabahador')),
-	('Mangingisda', _('Mangingisda')),
-	('Wala sa nabanggit', _('Wala sa nabanggit')),
+	('Da galbek', _('Da galbek')),
+	('Oway', _('Oway')),
+	('Di', _('Di')),
     )
 
 ### Starts here 
     name = models.CharField(max_length=64,blank=True,default='')
-    curaddress = models.CharField(max_length=64,blank=True,default='')
-    peraddress = models.CharField(max_length=64,blank=True,default='')
+    address = models.CharField(max_length=64,blank=True,default='')
     contact = models.CharField(max_length=64,blank=True,default='')
     group = models.CharField(max_length=64,blank=True,default='')
     PS = models.CharField(max_length=64, choices=PS, blank=True,default='')
