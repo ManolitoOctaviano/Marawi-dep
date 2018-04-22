@@ -533,8 +533,7 @@ class Respondent(models.Model):
 
 ### Starts here 
     name = models.CharField(max_length=64,blank=True,default='')
-    curaddress = models.CharField(max_length=64,blank=True,default='')
-    peraddress = models.CharField(max_length=64,blank=True,default='')
+    address = models.CharField(max_length=64,blank=True,default='')
     contact = models.CharField(max_length=64,blank=True,default='')
     group = models.CharField(max_length=64,blank=True,default='')
     PS = models.CharField(max_length=64, choices=PS, blank=True,default='')

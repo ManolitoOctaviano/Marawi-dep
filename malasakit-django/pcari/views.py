@@ -478,7 +478,7 @@ def make_respondent_data(respondent, response):
     """ Save respondent data from a given response object. """
     respondent_data = response.get('respondent-data', {})
     #attributes = ['age','gender','name','language','submitted_personal_data','completed_survey','sector',]
-    attributes = ['name','curaddress','peraddress','contact','group','PS','interviewer','organization',
+    attributes = ['name','address','contact','group','PS','interviewer','organization',
 		  'PPiIName', 'PPiIAge','PPiIGender','PPiIQI','PPiIQII','PPiIQIII','PPiIQIV',
 		  'PPiIIName', 'PPiIIAge','PPiIIGender','PPiIIQI','PPiIIQII','PPiIIQIII','PPiIIQIV',
 		  'PPiIIIName', 'PPiIIIAge','PPiIIIGender','PPiIIIQI','PPiIIIQII','PPiIIIQIII','PPiIIIQIV',
