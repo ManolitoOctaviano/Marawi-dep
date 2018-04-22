@@ -527,7 +527,7 @@ class Respondent(models.Model):
 	('Mangingisda', _('Mangingisda')),
 	('Magsasaka', _('Magsasaka')),
 	('Trabahador', _('Trabahador')),
-	('Mangingisda', _('Mangingisda')),
+	('Uring Manggagawa', _('Uring Manggagawa')),
 	('Wala sa nabanggit', _('Wala sa nabanggit')),
     )
 
